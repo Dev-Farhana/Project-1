@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.nav .nav-left, .nav .nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+.nav h3,i{
+    border: 1.5px solid #333;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.nav h1{
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+
+.nav #tooth-icon{
+    background-color: orangered;
+    padding: 6px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 400;
+}
+.nav button{
+    padding: 7px 12px;
+    border-radius: 15px;
+    border: 1.5px solid #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+#signup-btn{
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    font-weight: 600;
+}
+.main>h1{
+    font-size: 140px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+img{
+    height: 340px;
+    width: 270px;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+#img1{
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+#img2{
+    transform: translate(-50%, -50%) rotate(-20deg);
+}
+#img3{
+    transform: translate(-50%, -50%) rotate(-10deg);
+}
+.btm-left{
+    position: absolute;
+    left: 3%;
+    bottom: 5%;
+    font-size: 20px;
+}
+.btm-right{
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+    font-size: 20px;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.semi-circle {
+    position: absolute;
+    bottom: 1%;
+    left: 45%;
+    width: 200px;
+    height: 70px;
+    border: 2px solid #333;
+    border-radius: 100px 100px 0 0;
+}
+.down-arrow{
+    position: absolute;
+    bottom: 15%;
+    left: 40%;
+}
