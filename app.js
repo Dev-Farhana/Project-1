@@ -1,15 +1,63 @@
 
+gsap.from("#tooth-icon", {
+    y: -100, 
+    duration: 3,
+    stagger : 1 
+});
 
-gsap.from("#tooth-icon", { y: -45, duration: 3 });
+gsap.to( "#tooth-icon", {
+    duration: 3,
+    delay:2,
+    x:5,
+    stagger : 1 
+})
 
-gsap.from(".h1", { y: -45, duration: 3 });
+gsap.from(".h1", {
+    delay: 2, 
+    duration: 3,
+    opacity: 0 ,
+    stagger : 1 
+});
 
-// gsap.fromTo(".h1", {y: -45},{ x: 10 , duration: 3});
 
-// document.addEventListener("mousemove", function(event) {
-//     console.log("Mouse X: " + event.clientX); 
-//     console.log("Mouse Y: " + event.clientY);
-//   });
-  
-//   y :1-45;
-// x: 430;
+gsap.fromTo(".down-arrow", {
+    y: 0,}, 
+ {  y: -30,
+    duration: 1,
+    repeat: -1,
+    yoyo: true
+});
+
+gsap.to( "#img" , {
+    rotate: 40,
+    x:50,
+    duration:3,
+    stagger : 1 ,
+    opacity: 0,
+    delay:5
+})
+gsap.to("#img2" , {
+    rotate: 20,
+    x:50,
+    delay: 6,
+    duration:3,
+    stagger : 1, 
+    opacity:0
+})
+gsap.to("#img3" , {
+    rotate: 20,
+    x:50,
+    delay: 7,
+    duration:3,
+    stagger : 1, 
+    opacity:0
+})
+gsap.to( "#img1" , {
+    rotate: 20,
+    x:50,
+    delay:8,
+    duration:3,
+    stagger : 1 ,
+    opacity:0
+})
+
